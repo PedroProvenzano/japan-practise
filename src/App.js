@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/hiragana" element={<Hiragana />} />
-        <Route path="/katakana" element={<Katakana />} />
+        <Route path="japan-practise/" element={<Home />} />
+        <Route path="japan-practise/hiragana" element={<Hiragana />} />
+        <Route path="japan-practise/katakana" element={<Katakana />} />
       </Routes>
     </div>
   );
