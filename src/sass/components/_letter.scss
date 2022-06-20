@@ -1,0 +1,7 @@
+@use "../abstracts/" as a;
+
+.letterMain {
+  font-size: a.$font-large;
+  user-select: none;
+  cursor: pointer;
+}

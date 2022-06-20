@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+.listContainer {
+  font-size: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10rem;
+  li {
+    margin-top: 1.5rem;
+    letter-spacing: 4px;
+    transition: all 100ms ease-in;
+    &:hover {
+      font-weight: 800;
+      cursor: pointer;
+      user-select: none;
+      list-style: square;
+      letter-spacing: 6px;
+    }
+  }
+}
+.title {
+  margin-bottom: 1rem;
+}

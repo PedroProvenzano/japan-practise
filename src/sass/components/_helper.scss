@@ -1,0 +1,35 @@
+@use "../abstracts/" as a;
+
+@mixin flexState($orient) {
+  display: flex;
+  flex-direction: $orient;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.helperMain {
+  font-size: a.$font-medium;
+  padding: 0 2rem;
+  width: 50%;
+  max-width: 500px;
+  .sect {
+    @include flexState(row);
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .sectCol {
+    @include flexState(column);
+    height: 7rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .helperCheck {
+    height: 100%;
+  }
+}
+
+@media (max-width: 570px) {
+  .helperMain {
+    width: 90%;
+  }
+}

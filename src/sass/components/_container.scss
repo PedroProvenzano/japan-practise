@@ -1,0 +1,17 @@
+@use "../base/" as b;
+@use "../abstracts/" as a;
+
+.containerMain {
+  background: a.$color-primary;
+  border-radius: b.$border-radius;
+  box-shadow: b.$border-bshadow;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 1rem;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+  min-height: 500px;
+  height: 60%;
+}

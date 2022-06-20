@@ -1,0 +1,28 @@
+@use "../abstracts/" as a;
+@use "../base/" as b;
+
+@mixin buttonBasics($color) {
+  background: $color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  box-shadow: b.$border-shadow;
+  border-radius: b.$border-radius;
+  cursor: pointer;
+  user-select: none;
+  transition: all a.$animation-time ease-in;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 10px;
+  }
+  .buttonIcon {
+    font-size: a.$font-normal;
+  }
+}
+.navButtonMain {
+  @include buttonBasics(a.$color-primary);
+}
+
+.buttonMain {
+  @include buttonBasics(a.$color-lsecondary);
+}

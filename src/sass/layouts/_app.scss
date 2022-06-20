@@ -1,0 +1,35 @@
+@use "../abstracts" as a;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: a.$color-lsecondary;
+}
+
+@media (max-width: 1500px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 570px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (max-height: 1100px) {
+  html {
+    font-size: 10px;
+  }
+}
