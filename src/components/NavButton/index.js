@@ -1,7 +1,7 @@
 import { IoArrowBackOutline, IoHomeSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-const NavButton = ({ style, text, icon, mode = "def", link }) => {
+const NavButton = ({ text, icon, mode = "def" }) => {
   const buttonMode = () => {
     switch (mode) {
       case "back":
@@ -17,7 +17,7 @@ const NavButton = ({ style, text, icon, mode = "def", link }) => {
 
   return (
     <div style={mode === "home" ? home : {}} className="navButtonMain">
-      <Link className="linkFormat" to="/">
+      <Link className="linkFormat" to="/japan-practise/">
         {icon && icon}
         {buttonMode()}
       </Link>
