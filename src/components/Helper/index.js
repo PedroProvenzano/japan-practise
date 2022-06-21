@@ -30,7 +30,7 @@ const Helper = ({ letter, include, setInclude }) => {
   return (
     <div className="helperMain">
       <div className="sect">
-        <Button evnt={toggleShow} text="Help" />
+        <Button evnt={toggleShow} text="Romaji" />
         {show ? letter : "**"}
       </div>
       <div className="sectCol">
