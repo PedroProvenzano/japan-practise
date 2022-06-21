@@ -44,7 +44,7 @@ const Helper = ({ letter, include, setInclude }) => {
             }}
             checked={isChecked.char}
           />
-          <p>Char</p>
+          <p>Basic</p>
         </div>
         <div className="sect">
           <Switch
