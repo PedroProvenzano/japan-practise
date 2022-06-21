@@ -1,8 +1,14 @@
-const Button = ({ text = "boton", evnt }) => {
+const Button = ({ text = "boton", evnt, on, off }) => {
   return (
     <div
       onClick={() => {
         evnt && evnt();
+      }}
+      onMouseDown={() => {
+        on && on();
+      }}
+      onMouseUp={() => {
+        off && off();
       }}
       className="buttonMain"
     >

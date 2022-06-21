@@ -14,6 +14,14 @@ const Helper = ({ letter, include, setInclude }) => {
     setShow(!show);
   };
 
+  const onShow = () => {
+    setShow(true);
+  };
+
+  const offShow = () => {
+    setShow(false);
+  };
+
   const toggleChecked = (type) => {
     if (type === "char") {
       setIsChecked({ ...isChecked, char: !isChecked.char });
@@ -30,7 +38,7 @@ const Helper = ({ letter, include, setInclude }) => {
   return (
     <div className="helperMain">
       <div className="sect">
-        <Button evnt={toggleShow} text="Romaji" />
+        <Button on={onShow} off={offShow} text="Romaji" />
         {show ? letter : "**"}
       </div>
       <div className="sectCol">
